@@ -1,5 +1,5 @@
-def translatio(ntext: str) -> str:
-    # your code here
+def translation(ntext: str) -> str:
+    """ transforma le frasi degli uccelli in frasi degli umani """
     ndx_c = 0
     nuova_frase = ""
     for ndx_t, e in enumerate(text[:-1]):
@@ -18,3 +18,14 @@ def translatio(ntext: str) -> str:
         else:
             ndx_c = ndx_c + 2
     return nuova_frase
+
+print("Example:")
+print(translation("hieeelalaooo"))
+
+# These "asserts" are used for self-checking
+assert translation("hieeelalaooo") == "hello"
+assert translation("hoooowe yyyooouuu duoooiiine") == "how you doin"
+assert translation("aaa bo cy da eee fe") == "a b c d e f"
+assert translation("sooooso aaaaaaaaa") == "sos aaa"
+
+print("The mission is done! Click 'Check Solution' to earn rewards!")
