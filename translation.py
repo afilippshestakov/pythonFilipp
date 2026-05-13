@@ -1,4 +1,4 @@
-def translation(ntext: str) -> str:
+def translation(text: str) -> str:
     """ transforma le frasi degli uccelli in frasi degli umani """
     ndx_c = 0
     nuova_frase = ""
@@ -9,8 +9,8 @@ def translation(ntext: str) -> str:
             continue
         elif ndx_t == ndx_c:
             nuova_frase = nuova_frase + e
-        elif ndx_t >= len(text) - 1:
-            break
+        # elif ndx_t == len(text) - 1:
+        #     break
         else:
             continue
         if e in "aeiouy":
