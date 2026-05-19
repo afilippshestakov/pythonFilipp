@@ -3,10 +3,12 @@ def create_intervals(data):
     Create a list of intervals out of set of ints.
     """
     # your code here
-    new = ''
-    for e in data:
-        if not e[1, 1, 1]:
-            new = 1
+    data = list(data)
+    data.sort()
+    result_lst = []
+    primo = data[0]
+    for x in data[1:]:
+        if 
     return None
 
 
